@@ -2,6 +2,7 @@ const https = require("https");
 
 const start = Date.now();
 
+// Make http request to Google
 function doRequest() {
     https.request("https://www.google.com", res => {
         res.on("data", () => {});
